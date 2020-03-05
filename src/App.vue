@@ -1,9 +1,12 @@
 <template>
   <div id="app">
     <div id="nav">
+		<!--相当于a标签的路由信息-->
       <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/about">About</router-link> |
+	  <router-link to="/mine">用户中心</router-link>
     </div>
+	<!--路由出口-->
     <router-view/>
   </div>
 </template>
