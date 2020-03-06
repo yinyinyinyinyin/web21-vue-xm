@@ -4,7 +4,20 @@
 		<myswiper :swiperArr="swiperArr" type="ITEM"></myswiper>
 		
 		<h3>{{itemObj.pro_name}}</h3>
-		
+		<br/>
+		<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+		<br/>
+		<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+		<br/>
+		<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+		<br/>
+		<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+		<br/>
+		<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+		<br/>
+		<h3>{{itemObj.pro_name}}</h3>
+		<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+		<h3>{{itemObj.pro_name}}</h3>
 	</div>
 </template>
 
