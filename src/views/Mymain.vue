@@ -8,9 +8,7 @@
 					<img :src="item.adlist_img"  :alt="item.adtitle" />
 				</div>
 			</div>
-			
 			<div class="swiper-pagination"></div>
-		
 			<div class="swiper-button-prev"></div>
 			<div class="swiper-button-next"></div>
 		</div>
@@ -18,12 +16,12 @@
 		<!--精选-->
 		<!--注意：循环时必须写 :key 第一写key提高性能，第二没有key会报警告-->
 		<div class="jingxuanCon">
-			<h2>为您精选</h2>
+			<h3>为您精选</h3>
 			<ul>
 				<li v-for="(item,index) in jingxuanArr"  :key="index">
 					<div><img :src="item.pro_img[0].url" :alt="item.pro_name"/></div>
-					<div>{{item.pro_name}}</div>
-					<div>{{item.pro_Joiner}}</div>
+					<div class="jingxuantitle">{{item.pro_name}}</div>
+					<div class="jingxuantext">{{item.pro_Joiner}}人已参加</div>
 				</li>
 			</ul>
 		</div> 
@@ -32,7 +30,7 @@
 			<h2>本周最受欢迎TOP5</h2>
 			<ul class="top5list">
 				<li v-for="(item,index) in top5Arr"  :key="index">
-					<router-link :to="'/item/'+item.pro_id">
+					<router-link :to="'/myitem/'+item.pro_id">
 						<div class="top5_img"><img :src="item.pro_img[0].url" /></div>
 						<div class="top5_text">
 							<div>{{item.pro_name}}</div>
@@ -82,7 +80,6 @@
 			    observeParents:true,
 			    // 如果需要分页器
 			    pagination: '.swiper-pagination',
-			    
 			    // 如果需要前进后退按钮
 			    nextButton: '.swiper-button-next',
 			    prevButton: '.swiper-button-prev',
@@ -100,6 +97,7 @@ scoped="scoped" 该样式只在本页面起作用
 <style scoped="scoped" lang="scss">
 	//轮播图样式
 	.swiper-container{
+		border-bottom:#f5f5f5 solid 10px;
 		height:170px;
 		.swiper-wrapper{
 			.swiper-slide{
@@ -109,7 +107,9 @@ scoped="scoped" 该样式只在本页面起作用
 	}
 	//为您精选
 	.jingxuanCon{
+		h3{margin-top:10px; padding-left:10px; margin-bottom:10px;}
 		width:100%;
+		border-bottom:#f5f5f5 solid 10px;
 		ul{
 			width: 100%;
 			display: flex; 
@@ -119,6 +119,8 @@ scoped="scoped" 该样式只在本页面起作用
 			li{
 				width: 40%;
 				height:160px;
+				.jingxuantitle{font-weight: bold;}
+				.jingxuantext{color:#ccc;font-size:12px;}
 				div{
 					img{
 						width: 100%; 

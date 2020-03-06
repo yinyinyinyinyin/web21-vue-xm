@@ -33,6 +33,7 @@ scoped="scoped" 该样式只在本页面起作用
 ul,li{list-style:none;}	
 a{text-decoration: none;}	
 #nav {
+	background: #fff;
 	font-size:12px;
   position: fixed;
   bottom:0;

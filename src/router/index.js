@@ -36,6 +36,12 @@ const routes = [
   	  name:'myme',
   	  //路由栏加载,性能更好
   	  component: () => import(/* webpackChunkName: "myme" */ '../views/Myme.vue')
+  },
+  {
+  	  path:'/myitem/:itemid',
+  	  name:'myitem',
+  	  //路由栏加载,性能更好
+  	  component: () => import(/* webpackChunkName: "myitem" */ '../views/Myitem.vue')
   }
 ]
 
