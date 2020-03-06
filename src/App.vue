@@ -29,6 +29,7 @@
 scoped="scoped" 该样式只在本页面起作用
 -->
 <style lang="scss" >
+*{padding:0;margin:0;}
 ul,li{list-style:none;}	
 a{text-decoration: none;}	
 #nav {

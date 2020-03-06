@@ -2,7 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 
 //引入的页面
-import Home from '../views/Home.vue'
+
 
 //使用路由  加载路由
 Vue.use(VueRouter)
