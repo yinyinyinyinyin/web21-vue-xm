@@ -13,6 +13,8 @@
 			<div class="swiper-button-next"></div>
 		</div>
 		
+		<img src="../assets/icon/1.png" />
+		
 		<!--精选-->
 		<!--注意：循环时必须写 :key 第一写key提高性能，第二没有key会报警告-->
 		<div class="jingxuanCon">
